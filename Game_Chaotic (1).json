@@ -1,0 +1,197 @@
+{
+  "name": "Chaotic",
+  "menuBackgroundImage": "",
+  "defaultRessources": {
+    "backgrounds": [],
+    "decksUrl": ""
+  },
+  "customHelp": "Chaotic TCG - Battle for Perim. Build your army with Creatures, Attacks, Locations, Mugics and BattleGear.",
+  "cardRotation": 45,
+  "cards": {
+    "dataUrl": "https://github.com/Armsther/Chaotic/blob/c776a0f025ab7641d5ac9f9c67dc327ca63e12ab/CardList_json.json",
+    "cardBack": ""
+  },
+  "deckBuilding": {
+    "mainFilters": [
+      "Tribe",
+      "Type",
+      "Set",
+      "Rarity"
+    ],
+    "formats": [
+      {
+        "title": "Classic Chaotic",
+        "gameplay": "Classic",
+        "customCategories": [
+          "Creature",
+          "Attack",
+          "Location",
+          "Mugic",
+          "BattleGear"
+        ]
+      }
+    ]
+  },
+  "gameplay": {
+    "Classic": {
+      "mulligan": {
+        "info": "Choose cards to redraw before the game begins.",
+        "startingHandSize": 7,
+        "drawNewHand": true,
+        "putSelectionAtBottom": true,
+        "drawNewSelectedCards": true
+      },
+      "newTurn": {
+        "drawOnStart": true,
+        "sharedTurn": false,
+        "firstPlayerTokenName": "Initiative",
+        "drawPerTurn": 1
+      },
+      "defaultNotes": "Track Creature Energy, Battle Points and effects manually when needed.",
+      "tokens": [],
+      "countersStartingValues": [
+        0
+      ],
+      "hideFacedDownCards": false,
+      "sections": {
+        "customSections": [
+          "Creature Field",
+          "Location Zone",
+          "Attack Deck",
+          "Mugic Deck",
+          "BattleGear Deck",
+          "Discard"
+        ],
+        "layout": {
+          "direction": "row",
+          "isSymetricalForOpponents": true,
+          "content": [
+            {
+              "direction": "column",
+              "style": false,
+              "content": [
+                "Location Zone",
+                "Creature Field"
+              ],
+              "isSymetricalForOpponents": true
+            },
+            {
+              "direction": "column",
+              "style": false,
+              "content": [
+                "Attack Deck",
+                "Mugic Deck",
+                "BattleGear Deck",
+                "Discard"
+              ],
+              "isSymetricalForOpponents": false
+            }
+          ]
+        },
+        "categoriesAlreadyOnBoard": [
+          "Location"
+        ],
+        "autoPlayFromHand": {},
+        "autoPlayFromStack": {},
+        "sectionsDict": {
+          "Creature Field": {
+            "title": "Creature Field",
+            "isHidden": "no",
+            "height": "SMALL",
+            "alignment": "START",
+            "opponentAlignment": false,
+            "noAutoPayTo": "true",
+            "isHorizontalAllowed": false,
+            "displayedTitle": "Creatures",
+            "enterTapped": false,
+            "enterSpun": false,
+            "isGroupForbidden": false,
+            "keepTappedNewTurn": false,
+            "showHiddenCardInHistory": false,
+            "noQuickActions": false
+          },
+          "Location Zone": {
+            "title": "Location Zone",
+            "isHidden": "no",
+            "height": "SMALL",
+            "alignment": "START",
+            "opponentAlignment": false,
+            "noAutoPayTo": "true",
+            "isHorizontalAllowed": true,
+            "displayedTitle": "Locations",
+            "enterTapped": false,
+            "enterSpun": false,
+            "isGroupForbidden": false,
+            "keepTappedNewTurn": false,
+            "showHiddenCardInHistory": false,
+            "noQuickActions": false
+          },
+          "Attack Deck": {
+            "title": "Attack Deck",
+            "isHidden": "yes",
+            "height": "SMALL",
+            "alignment": "START",
+            "opponentAlignment": false,
+            "noAutoPayTo": "true",
+            "isHorizontalAllowed": false,
+            "displayedTitle": "Attack Deck",
+            "enterTapped": false,
+            "enterSpun": false,
+            "isGroupForbidden": false,
+            "keepTappedNewTurn": false,
+            "showHiddenCardInHistory": false,
+            "noQuickActions": false
+          },
+          "Mugic Deck": {
+            "title": "Mugic Deck",
+            "isHidden": "yes",
+            "height": "SMALL",
+            "alignment": "START",
+            "opponentAlignment": false,
+            "noAutoPayTo": "true",
+            "isHorizontalAllowed": false,
+            "displayedTitle": "Mugics",
+            "enterTapped": false,
+            "enterSpun": false,
+            "isGroupForbidden": false,
+            "keepTappedNewTurn": false,
+            "showHiddenCardInHistory": false,
+            "noQuickActions": false
+          },
+          "BattleGear Deck": {
+            "title": "BattleGear Deck",
+            "isHidden": "yes",
+            "height": "SMALL",
+            "alignment": "START",
+            "opponentAlignment": false,
+            "noAutoPayTo": "true",
+            "isHorizontalAllowed": false,
+            "displayedTitle": "BattleGear",
+            "enterTapped": false,
+            "enterSpun": false,
+            "isGroupForbidden": false,
+            "keepTappedNewTurn": false,
+            "showHiddenCardInHistory": false,
+            "noQuickActions": false
+          },
+          "Discard": {
+            "title": "Discard",
+            "isHidden": "no",
+            "height": "SMALL",
+            "alignment": "START",
+            "opponentAlignment": false,
+            "noAutoPayTo": "true",
+            "isHorizontalAllowed": false,
+            "displayedTitle": "Discard",
+            "enterTapped": false,
+            "enterSpun": false,
+            "isGroupForbidden": false,
+            "keepTappedNewTurn": false,
+            "showHiddenCardInHistory": false,
+            "noQuickActions": false
+          }
+        }
+      }
+    }
+  }
+}
